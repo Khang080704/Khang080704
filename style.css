@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fefefe;
+    color: #333;
+    font-size: 62.5%;
+}
+
+.header {
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    margin: 0 25px;
+    
+}
+
+.nav-links a:hover {
+    color: #0077cc;
+    text-align: center;
+    
+}
+
+.active {
+    border-bottom: 2px solid #0077cc;
+    padding-bottom: 10px;
+}
+.nav-link {
+    position: relative;
+}
+.nav-link:hover::after {
+    content: "";
+    border-bottom: 2px solid #0077cc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: slide linear 0.3s forwards;
+}
+
+@keyframes slide{
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 740px) {
+    .nav-links a {
+        margin-left: 10px;
+        gap: 0;
+    }
+    .header {
+        font-size: 0.8rem;
+        padding: 20px 10px;
+    }
+}
+@media (min-width: 741px) and (max-width: 1113px) {
+    .nav-links a {
+        gap: 5px;
+        margin-left: 20px;
+    }
+    .header {
+        padding: 20px 20px;
+    }
+
+}
