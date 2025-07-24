@@ -6,11 +6,13 @@
     padding: 42px 10%;
     flex-wrap: wrap;
 }
+
 .avatar {
     flex: 1;
     display: flex;
     justify-content: center;
 }
+
 .home-page.img {
     border-radius: 100%;
 }
@@ -73,11 +75,13 @@
     margin-top: 2px;
     padding: 15px 10%;
     background-color: #EDF7FA;
-    
+
 }
+
 .skills p {
     font-size: 24px;
 }
+
 .skill-list {
     padding: 0;
     margin-top: 5px;
@@ -87,11 +91,122 @@
     justify-content: space-between;
     overflow-x: auto;
 }
+
 .skill-list-img {
     width: 64px;
     margin: 10px 10px;
 
 }
+
+.home-page-project {
+    margin-top: 2px;
+    padding: 15px 10%;
+}
+
+.home-page-project p {
+    font-size: 24px;
+}
+
+.home-page-project-img {
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.home-page-project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.home-page-project-list {
+    padding: 0;
+    list-style: none;
+}
+
+.home-page-project-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid lightcoral;
+}
+
+.home-page-project-title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.home-page-project-container {
+    display: flex;
+    align-items: center;
+}
+
+.home-page-project-time {
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #000;
+    width: fit-content;
+}
+
+.home-page-project-time p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.time-container {
+    min-width: 100px;
+    margin-right: 20px;
+}
+
+.home-page-project-tech {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.home-page-project-tech-img {
+    width: 32px;
+}
+
+.home-page-project-description {
+    font-size: 0.8rem;
+}
+
+.contact-logo-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contact {
+    padding: 0 10%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-logo-item {
+
+}
+.contact-logo-icon {
+    width: 48px;
+    height: 48px;
+    display: block;
+    color: black;
+}
+.contact-logo-link {
+    width: 24px;
+    height: 24px;
+}
+
 
 @media (max-width: 740px) {
     .info {
@@ -99,11 +214,54 @@
         align-items: center;
         justify-content: center;
     }
+
     .info h1 {
         text-align: center;
     }
+
     .info-content {
         padding: 0;
         text-align: center;
+    }
+
+    .home-page-project-item {
+        flex-direction: column;
+    }
+
+    .home-page-project-img {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .home-page-project-info {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .home-page-project-title {
+        font-size: 20px;
+    }
+
+    .home-page-project-time {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: #000;
+        border-radius: 0;
+    }
+
+    .time-container {
+        border-right: 1px solid #000;
+
+    }
+
+}
+
+@media (max-width: 1113px) and (min-width: 741px) {
+    .home-page-project-description {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
     }
 }

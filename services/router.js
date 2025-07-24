@@ -30,7 +30,7 @@ const routers = {
                 elements = document.createElement('project-page')
                 break
             case '/contact':
-                console.log('contact')
+                elements = document.createElement('contact-page')
                 break
             default:
                 break
