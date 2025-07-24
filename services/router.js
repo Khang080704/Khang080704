@@ -23,6 +23,9 @@ const routers = {
             case '/': 
                 elements = document.createElement('home-page')
                 break;
+            case '/index.html': 
+                elements = document.createElement('home-page')
+                break;
             case '/project':
                 elements = document.createElement('project-page')
                 break
