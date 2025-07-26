@@ -20,25 +20,92 @@ body {
     z-index: 2;
     width: 100%;
     font-size: 17px;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .nav-links {
-    list-style: none;
+    position: relative;
     display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 .nav-link a {
+    display: block;
+    padding: 0.75rem 1.5rem;
     text-decoration: none;
-    color: #333;
+    color: #666;
     font-weight: 500;
-    margin: 0 25px;
-    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Active state */
+.nav-link.active a {
+    color: #0077cc;
+    font-weight: 600;
+}
+
+/* Hover effects */
+.nav-link:hover a {
+    color: #0077cc;
+    transform: translateY(-2px);
+}
+
+/* Slide indicator */
+.nav-indicator {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0077cc, #005599);
+    border-radius: 2px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+/* Background slide effect on hover */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 119, 204, 0.1);
+    border-radius: 8px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-link.active::before {
+    transform: scaleX(1);
+    background: rgba(0, 119, 204, 0.15);
+}
+
+/* Additional hover animation */
+.nav-link:hover {
+    transform: scale(1.05);
+}
+
+.nav-link.active {
+    transform: scale(1.02);
 }
 
 

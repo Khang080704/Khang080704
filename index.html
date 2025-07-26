@@ -11,16 +11,19 @@
 
 <body>
     <header class="header">
-        <nav>
-            <h1 class="logo">Logo</h1>
-            <ul class="nav-links">
-                <li class="nav-link active">
-                    <a href="/">Home</a>
-                </li>
-                <li class="nav-link"><a href="/project">Projects</a></li>
-                <li class="nav-link"><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1 class="logo">Logo</h1>
+        <ul class="nav-links">
+            <li class="nav-link active" data-route="/">
+                <a href="/">Home</a>
+            </li>
+            <li class="nav-link" data-route="/project">
+                <a href="/project">Projects</a>
+            </li>
+            <li class="nav-link" data-route="/contact">
+                <a href="/contact">Contact</a>
+            </li>
+            <div class="nav-indicator"></div> <!-- Slide indicator -->
+        </ul>
     </header>
 
     <main>
