@@ -80,7 +80,6 @@ class NavigationManager {
     setActiveRoute(route) {
         this.navLinks.forEach((link) => {
             const linkRoute = link.getAttribute("data-route");
-            console.log(linkRoute)
             if (linkRoute === route) {
                 link.classList.add("active");
             } else {

@@ -4,24 +4,14 @@ const routers = {
         links.forEach((link) => {
             link.addEventListener("click", (e) => {
                 e.preventDefault();
-                // if (e.target.matches('a[href^="/"]')) {
-                //     e.preventDefault();
-                //     const path = e.target.getAttribute("href");
-
-                //     // Navigate to the route
-                //     history.pushState({}, "", path);
-                //     handleRouteChange(path);
-
-                //     // Update navigation
-                //     if (window.navigationManager) {
-                //         window.navigationManager.setActiveRoute(path);
-                //     }
-                // }
                 const href = e.target.getAttribute("href");
                 this.go(href, true);
                 this.handleRouteChange(href);
-                if(window.navigationManager) {
-                    window.navigationManager.setActiveRoute(href)
+                if (window.navigationManager) {
+                    window.navigationManager.setActiveRoute(href);
+                }
+                if (window.mobileNavigation) {
+                    window.mobileNavigation.setActiveRoute(href);
                 }
             });
         });
