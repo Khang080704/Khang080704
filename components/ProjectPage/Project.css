@@ -1,4 +1,283 @@
-p {
-    color: rebeccapurple;
-    margin-top: 100px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9ecef;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    flex: 1;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.project-placeholder {
+    width: 100%;
+    height: 300px;
+    background-image: url('../../assets/Projects/QLSTK.jpg');
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project-content {
+    flex: 1;
+    min-width: 400px;
+}
+
+.project-header {
+    margin-bottom: 30px;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.project-time {
+    background: #e3f2fd;
+    color: #1976d2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.project-section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 12px;
+}
+
+.section-content {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+.features-list,
+.responsibilities-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features-list li,
+.responsibilities-list li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #6c757d;
+}
+
+/* .features-list li::before,
+.responsibilities-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2rem;
+} */
+
+.role-tag {
+    background: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.tech-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+/* Tech icons colors */
+.tech-html {
+    background: #e34f26;
+}
+
+.tech-css {
+    background: #1572b6;
+}
+
+.tech-js {
+    background: #f7df1e;
+    color: #000;
+}
+
+.tech-react {
+    background: #61dafb;
+    color: #000;
+}
+
+.tech-vue {
+    background: #4fc08d;
+}
+
+.tech-angular {
+    background: #dd0031;
+}
+
+.tech-node {
+    background: #339933;
+}
+
+.tech-typescript {
+    background: #3178c6;
+}
+
+.tech-next {
+    background: #000000;
+}
+
+.tech-tailwind {
+    background: #06b6d4;
+}
+
+.tech-bootstrap {
+    background: #7952b3;
+}
+
+.tech-scss {
+    background: #cc6699;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .projects-container {
+        gap: 50px;
+    }
+
+    .project {
+        flex-direction: column !important;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .project-image {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .project-content {
+        min-width: auto;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .tech-stack {
+        gap: 8px;
+    }
+
+    .tech-item {
+        padding: 6px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .project {
+        padding: 20px 15px;
+    }
+
+    .project-placeholder {
+        height: 250px;
+        font-size: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
 }

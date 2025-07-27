@@ -15,9 +15,9 @@ export default class ContactPage extends HTMLElement {
         this.render()
     }
     render() {
-        const text = document.createElement('p')
-        text.innerHTML = 'asdasdasdasd'
-        this.root.appendChild(text)
+        const template = document.getElementById('project-page')
+        const content = template.content.cloneNode(true);
+        this.root.appendChild(content)
     }
 }
 

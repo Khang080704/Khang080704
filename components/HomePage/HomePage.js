@@ -15,6 +15,7 @@ export default class HomePage extends HTMLElement {
         this.render()
     }
 
+
     render() {
         const template = document.getElementById('home-page')
         const content = template.content.cloneNode(true);
