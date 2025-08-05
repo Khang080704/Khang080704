@@ -9,6 +9,7 @@ body {
     background: #fefefe;
     color: #333;
     font-size: 62.5%;
+    cursor: url('./assets/Tech/html.png'), url('./assets/Tech/css.png');
 }
 
 .header {

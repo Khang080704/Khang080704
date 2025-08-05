@@ -44,6 +44,7 @@ const routers = {
         }
         if (elements) {
             const main = document.querySelector("main");
+            app.shadowRoot = elements
             main.innerHTML = "";
             main.appendChild(elements);
         }
@@ -54,5 +55,9 @@ const routers = {
         }
     },
 };
+
+function updateRoot(root) {
+    app.shadowRoot = root
+}
 
 export default routers;
