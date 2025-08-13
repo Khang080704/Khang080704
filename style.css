@@ -170,7 +170,7 @@
     .intro {
         background-image: url('https://assets.codepen.io/296057/fem-comet.jpg');
         background-repeat: no-repeat;
-        background-position: 86% 20%;
+        background-position: 86% 10%;
         color: var(--white);
         padding: 4rem 0;
     }
@@ -183,26 +183,13 @@
         font-weight: bold;
     }
 }
-
-@layer contact {
-    .section-contact {
-        text-align: center;
-        padding: 6rem 0;
-        background: var(--black) url("https://assets.codepen.io/296057/fem-aurora.jpg") center center;
-        color: var(--white);
-    }
-
-    .section-contact p:last-child {
-        margin-top: 3rem;
-    }
-}
-
 @layer nav {
     header {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: baseline;
+        margin-bottom: 6rem;
     }
 
     header h1 {
@@ -254,10 +241,10 @@
         text-decoration: none;
         color: var(--white);
     }
-
-    body {
-        background-color: black;
+    nav ul li a:hover {
+        color: var(--green);
     }
+
 
     @media (max-width: 830px) {
         header {
@@ -362,6 +349,20 @@
         }
     }
 }
+@layer contact {
+    .section-contact {
+        text-align: center;
+        padding: 6rem 0;
+        background: var(--black) url("https://assets.codepen.io/296057/fem-aurora.jpg") center center;
+        color: var(--white);
+    }
+
+    .section-contact p:last-child {
+        margin-top: 3rem;
+    }
+}
+
+
 
 @layer footer {
     footer {
@@ -395,9 +396,9 @@
 
 @layer project {
     .section-projects {
-        background-color: var(--black);
         padding: 6rem 0 4rem 0;
         color: var(--white);
+        background-color: var(--black);
     }
 
     figure {
