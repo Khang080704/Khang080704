@@ -1,8 +1,9 @@
+# My website
+View my website here: [My website](https://khang080704.github.io/Khang080704/)
+
 # Tech Stack:
 
 ### Languages
-
-
 
 ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) 
 ![Typescript](https://img.shields.io/badge/Typescript-blue.svg?style=for-the-badge&logo=Typescript&logoColor=white) 
