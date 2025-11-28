@@ -1,217 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato&display=swap"
-        rel="stylesheet">
+    <title>Khang's Portfolio - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-
-    <section class="intro">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <header>
-                <h1>
-                    <a href="index.html" target="_blank" aria-label="Click for home"> <svg
-                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path
-                                d="M557.7 64.9L363.5 139.6L365.8 110.3C366.8 97.5 353 88.8 341.8 95.2L165.3 197.4C102.6 233.7 64 300.6 64 373C64 485.1 154.9 576 267 576C339.4 576 406.3 537.4 442.6 474.7L544.8 298.3C551.3 287.2 542.6 273.3 529.7 274.3L500.4 276.6L575.1 82.4C575.7 80.9 576 79.2 576 77.6C576 70.1 570 64.1 562.5 64.1C560.8 64.1 559.2 64.4 557.7 65zM256 256C326.7 256 384 313.3 384 384C384 454.7 326.7 512 256 512C185.3 512 128 454.7 128 384C128 313.3 185.3 256 256 256zM256 352C256 334.3 241.7 320 224 320C206.3 320 192 334.3 192 352C192 369.7 206.3 384 224 384C241.7 384 256 369.7 256 352zM272 448C280.8 448 288 440.8 288 432C288 423.2 280.8 416 272 416C263.2 416 256 423.2 256 432C256 440.8 263.2 448 272 448z" />
-                        </svg> Khang Pham </a>
-                </h1>
-                <button type="button" tabindex="-1" hidden></button>
-                <nav>
-                    <ul>
-
-                        <li><a href="index.html#project" target="_blank"> Projects </a></li>
-                        <li><a href="about.html" target="_blank"> About </a></li>
-                        <li><a href="index.html#contact" target="_blank"> Contact </a></li>
-                        <li><a href="#" target="_blank" aria-label="Linked"> <svg xmlns="http://www.w3.org/2000/svg"
-                                    aria-hidden="true"
-                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                    <path
-                                        d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
-                                </svg> </a></li>
-                        <li><a href="#" target="_blank" aria-label="Github"> <svg xmlns="http://www.w3.org/2000/svg"
-                                    aria-hidden="true"
-                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                    <path
-                                        d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
-                                </svg> </a></li>
-                        <li><a href="./assets/CV/PhamGiaKhang-CV.pdf" download target="_blank" class="button"> Resume
-                            </a></li>
-                    </ul>
-                </nav>
-            </header>
-            <p>Hi, My name is <span class="name">Khang Pham</span> </p>
-            <h2>I teach the web</h2>
-            <p>I'm [an educator, a student, a developer, a designer] specializing in [HTML, CSS, user experience, your
-                tech
-                stack, etc].</p>
-            <p>Currently, I'm <a href="#" target="_blank">working at XYZ Corp</a> [, completing the XYZ Bootcamp, making
-                a
-                career switch from X to Y, etc].</p>
-        </div>
-    </section>
-
-    <section class="section-featured">
-        <div class="container">
-            <h2>Featured project</h2>
-            <article>
-                <h3>Practical CSS Layouts</h3>
-                <img src="https://assets.codepen.io/296057/fem-maglime.jpg" alt="screen shot" />
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>SVG</li>
-                </ul>
-                <div class="blackbox">
-                    <p>Starting with the basics of CSS and HTML, you'll progress through creating responsive designs for
-                        mobile, tablet, and desktop layouts. You'll learn to code complex layouts with CSS Grid and
-                        Flexbox and tackle real-world exercises like styling buttons, audio players, hamburger menus</p>
-                </div>
-                <p>
-                    <a href="https://frontendmasters.com/courses/css-layouts/" target="_blank" class="button">Watch the
-                        course</a>
-                </p>
-            </article>
-        </div>
-    </section>
-
-    <section class="section-projects">
-        <div class="container">
-            <h2>
-                Projects I am proud of
-            </h2>
-            <div class="topgrid">
-                <figure>
-                    <a href="https://frontendmasters.com/courses/css-projects/" target="_blank">
-                        <img src="https://assets.codepen.io/296057/fem-coffee-layout.jpg" alt="project" />
-                    </a>
-                    <figcaption>
-                        <h3>
-                            <a href="https://frontendmasters.com/courses/css-projects/" target="_blank"
-                                aria-hidden="true">
-                                CSS Projects
-                            </a>
-                        </h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <a href="https://frontendmasters.com/courses/advanced-css-layouts" target="_blank">
-                        <img src="https://assets.codepen.io/296057/fem-news.png" alt="project" />
-                    </a>
-                    <figcaption>
-                        <h3>
-                            <a href="https://frontendmasters.com/courses/advanced-css-layouts" target="_blank"
-                                aria-hidden="true">
-                                Advanced CSS Layouts
-                            </a>
-                        </h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <a href="https://frontendmasters.com/bootcamp" target="_blank">
-                        <img src="https://assets.codepen.io/296057/fem-blog.png" alt="project" />
-                    </a>
-                    <figcaption>
-                        <h3>
-                            <a href="https://frontendmasters.com/bootcamp" target="_blank" aria-hidden="true">
-                                Bootcamp
-                            </a>
-                        </h3>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </figcaption>
-                </figure>
-            </div>
-
-            <div class="bottomgrid">
-                <a href="https://frontendmasters.com/courses/css-projects/" target="_blank">
-                    <img src="https://assets.codepen.io/296057/fem-bootcamp.png" alt="CSS project" />
-                </a>
-
-                <a href="https://frontendmasters.com/bootcamp" target="_blank">
-                    <img src="https://assets.codepen.io/296057/fem-css-projects.webp" alt="Frontend Masters Bootcamp" />
-                </a>
-                <a href="https://frontendmasters.com/courses/advanced-css-layouts/" target="_blank">
-                    <img src="https://assets.codepen.io/296057/fem-adv-css.jpg" alt="Advanced CSS Layouts" />
-                </a>
-                <a href="https://frontendmasters.com/courses/intermediate-html-css/" target="_blank">
-                    <img src="https://assets.codepen.io/296057/fem-int-css.webp" alt="Intermediate HTML and CSS" />
-                </a>
-                <a href="https://frontendmasters.com/courses/css-layouts" target="_blank">
-                    <img src="https://assets.codepen.io/296057/fem-layouts.webp" alt="Practical CSS Layouts" />
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    
-
-
-
-    <!-- <figure>
-        <img src="https://assets.codepen.io/296057/fem-stars.jpg"
-            alt="Time lapse image of the stars circling around the north pole." />
-        <figcaption>This is a cool photo in your portfolio.</figcaption>
-    </figure> -->
-
-    <section class="section-contact">
-        <div class="container">
-            <h2>Contact me</h2>
-            <p>I'm always up for challenges to stretch my creativity. Let's get together and make something interesting
-            </p>
-            <p><a href="pgkhangt1@gmail.com" target="_blank" class="button">Email me</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <h2>Khang Pham &middot; Student</h2>
-            <ul>
-                <li><a href="#" target="_blank" aria-label="Linked"> <svg xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path
-                                d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
-                        </svg> </a>
-                </li>
-                <li><a href="#" target="_blank" aria-label="Github"> <svg xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true"
-                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                            <path
-                                d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z" />
-                        </svg> </a>
-                </li>
+            <div class="logo">Khang's Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#stats" class="nav-link">GitHub Stats</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <p>
-                <small>&copy; 2025 Khang Pham. All rights reserved</small>
-            </p>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Khang</h1>
+                <p class="hero-subtitle">Full Stack Developer | Software Engineer</p>
+                <p class="hero-description">Passionate about building scalable web applications with modern technologies</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="https://github.com/khang080704" target="_blank" class="btn btn-secondary">GitHub Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            
+            <div class="tech-stack-grid">
+                <!-- Languages Card -->
+                <div class="tech-card">
+                    <div class="tech-card-header">
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                            <span>C#</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Card -->
+                <div class="tech-card">
+                    <div class="tech-card-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                            <span>Next.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind">
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Card -->
+                <div class="tech-card">
+                    <div class="tech-card-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+                            <span>Express.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NET">
+                            <span>.NET</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & ORM Card -->
+                <div class="tech-card">
+                    <div class="tech-card-header">
+                        <h3>Database & ORM</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server">
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" alt="Prisma">
+                            <span>Prisma</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate">
+                            <span>Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & DevOps Card -->
+                <div class="tech-card">
+                    <div class="tech-card-header">
+                        <h3>Tools & DevOps</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                            <span>Figma</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=chat-bot&theme=gotham&border_color=54a68b" alt="Chat Bot">
+                    </div>
+                    <div class="project-content">
+                        <h3>Chat Bot</h3>
+                        <p>AI-powered chatbot application with natural language processing capabilities.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Khang080704/chat-bot" target="_blank" class="project-link">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=Microservice&theme=gotham&border_color=54a68b" alt="Microservice">
+                    </div>
+                    <div class="project-content">
+                        <h3>Microservice Architecture</h3>
+                        <p>Scalable microservice-based application with modern architecture patterns.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Khang080704/Microservice" target="_blank" class="project-link">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=KHTNK22-DATN-BA-Copilot&repo=ba_copilot_frontend&theme=gotham&border_color=54a68b" alt="BA Copilot">
+                    </div>
+                    <div class="project-content">
+                        <h3>BA Copilot Frontend</h3>
+                        <p>Business Analyst AI Copilot - Frontend application for intelligent business analysis.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/KHTNK22-DATN-BA-Copilot/ba_copilot_frontend" target="_blank" class="project-link">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=Project_WP&theme=gotham&border_color=54a68b" alt="ON Modern Bank">
+                    </div>
+                    <div class="project-content">
+                        <h3>Health Care App</h3>
+                        <p>Modern healthcare application with comprehensive patient management features.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Khang080704/Project_WP" target="_blank" class="project-link">View on GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title">GitHub Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <img src="https://github-readme-stats.vercel.app/api?username=khang080704&hide=stars,contribs&show=prs_merged_percentage&show_icons=true&theme=holi&border_color=71a9e&rank_icon=github&line_height=24" alt="GitHub Stats">
+                </div>
+                <div class="stat-card">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khang080704&&langs_count=6&layout=compact&theme=holi&border_color=71a9e&card_width=330px" alt="Top Languages">
+                </div>
+                <div class="stat-card full-width">
+                    <img src="https://streak-stats.demolab.com?user=khang080704&theme=rising-sun&date_format=j%2Fn%5B%2FY%5D&border=e78e42&currStreakNum=e78e42&sideNums=e78e42&dates=fef7ee" alt="GitHub Streak">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and build something amazing together!</p>
+            
+            <div class="contact-links-grid">
+                <!-- Email -->
+                <a href="mailto:pgkhangt1@gmail.com" class="contact-link-card">
+                    <div class="contact-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>pgkhangt1@gmail.com</p>
+                    <span class="contact-link-arrow">→</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/khang080704" target="_blank" class="contact-link-card">
+                    <div class="contact-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>khang080704</p>
+                    <span class="contact-link-arrow">→</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/khang-pham-a10875359/" target="_blank" class="contact-link-card">
+                    <div class="contact-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me</p>
+                    <span class="contact-link-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Khang's Portfolio. All rights reserved.</p>
+            <p class="footer-subtitle">Built with HTML, CSS, JavaScript, and AI</p>
         </div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
