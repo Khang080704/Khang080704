@@ -341,7 +341,12 @@ body {
 
 .project-links {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
 }
 
 .project-link {

@@ -51,6 +51,4 @@ View my website here: [My website](https://khang080704.github.io/Khang080704/)
 [![Student Management](https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=Microservice&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/Microservice)
 
 
-[![Hotel Management](https://github-readme-stats.vercel.app/api/pin/?username=KHTNK22-DATN-BA-Copilot&repo=ba_copilot_frontend&theme=gotham&border_color=54a68b)](https://github.com/KHTNK22-DATN-BA-Copilot/ba_copilot_frontend)
-
 [![ON Modern Bank](https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=Project_WP&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/Project_WP)
