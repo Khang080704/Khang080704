@@ -44,11 +44,20 @@ View my website here: [My website](https://khang080704.github.io/Khang080704/)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=khang080704&&langs_count=6&layout=compact&theme=holi&border_color=71a9e&card_width=330px)
 ![GitHub Streak](https://streak-stats.demolab.com?user=khang080704&theme=rising-sun&date_format=j%2Fn%5B%2FY%5D&border=e78e42&currStreakNum=e78e42&sideNums=e78e42&dates=fef7ee)
 
+# 💹 My Github Analytics
+
+[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Khang080704&theme=react)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 # Projects
 
-[![E-Commerce](https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=chat-bot&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/chat-bot)
+[![Chat Bot](https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=chat-bot&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/chat-bot)
 
-[![Student Management](https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=Microservice&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/Microservice)
+[![E-commerce](https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=Microservice&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/Microservice)
 
+[![BA Copilot](https://github-readme-stats.vercel.app/api/pin/?username=KHTNK22-DATN-BA-Copilot&repo=ba_copilot_frontend&theme=gotham&border_color=54a68b)](https://github.com/KHTNK22-DATN-BA-Copilot/ba_copilot_frontend)
 
-[![ON Modern Bank](https://github-readme-stats.vercel.app/api/pin/?username=khang080704&repo=Project_WP&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/Project_WP)
+[![Trading](https://github-readme-stats.vercel.app/api/pin/?username=HCMUS-Software-Architecture&repo=Back-end&theme=gotham&border_color=54a68b)](https://github.com/HCMUS-Software-Architecture/Back-end)
+
+[![Trading](https://github-readme-stats.vercel.app/api/pin/?username=Intro-to-DevOps&repo=yas&theme=gotham&border_color=54a68b)](https://github.com/Intro-to-DevOps/yas)
+
+[![Trading](https://github-readme-stats.vercel.app/api/pin/?username=Khang080704&repo=Reading-Book-App&theme=gotham&border_color=54a68b)](https://github.com/Khang080704/Reading-Book-App)
